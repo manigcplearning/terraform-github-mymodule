@@ -17,7 +17,7 @@ terraform {
 
 provider "google" {
   # Credentials to authenticate with GCP
-  credentials = file(var.gcp_credentials_file)
+  credentials = base64decode(var.GOOGLE_CREDENTIALS)
   project     = var.gcp_project_id
   region      = var.gcp_region
 }
