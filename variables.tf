@@ -11,6 +11,7 @@ variable "workspace_name" {
 variable "gcp_credentials_file" {
   description = "Path to the JSON file for GCP service account credentials."
   type        = string
+  default     = null
 }
 
 variable "GOOGLE_CREDENTIALS" {
